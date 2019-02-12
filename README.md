@@ -18,8 +18,9 @@ Summary: pandoc-crossref in pip and conda.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/py-pandoc-crossref-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/py-pandoc-crossref-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/py-pandoc-crossref-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/py-pandoc-crossref-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/py-pandoc-crossref-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/py-pandoc-crossref-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/py-pandoc-crossref-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/py-pandoc-crossref-feedstock/branch/master)
 
 Current release info
 ====================
