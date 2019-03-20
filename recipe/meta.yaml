@@ -1,6 +1,6 @@
 {% set name = "py-pandoc-crossref" %}
 {% set version = "0.3.4.0.5" %}
-{% set dep_ver = "0.3.4.0.2.6" %}
+{% set dep_ver = "0.3.4.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.6
     - pandoc-crossref ={{ dep_ver }}
-    - py-pandoc >=2.6,<2.7
+    - py-pandoc >=2.7,<2.8
 
 test:
   commands:
