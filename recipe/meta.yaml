@@ -28,8 +28,8 @@ requirements:
 
 test:
   commands:
-    - pandoc-crossref --version
     - pandoc-crossref --help
+    - pandoc-crossref --version
 
 about:
   home: https://github.com/kiwi0fruit/py-pandoc-crossref
