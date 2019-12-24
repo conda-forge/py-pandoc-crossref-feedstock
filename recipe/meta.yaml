@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.6
     - pandoc-crossref ={{ version }}
-    - py-pandoc >=2.9,<2.10
+    - py-pandoc >=2.9.1,<2.10
 
 test:
   commands:
