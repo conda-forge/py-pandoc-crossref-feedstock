@@ -5,7 +5,7 @@ Home: https://github.com/kiwi0fruit/py-pandoc-crossref
 
 Package license: GPLv2+
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Installs pandoc-crossref conda package in pip and conda.
 
