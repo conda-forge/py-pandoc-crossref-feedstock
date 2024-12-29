@@ -7,26 +7,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b5e5c999ebb4283d2512452d644d834e0121937820af9dc3e37025edf17f64ac
   patches:
     - conda.patch
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pandoc-crossref ={{ dep_ver }}
     - py-pandoc >=2.9.2,<2.10
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - pandoc-crossref --help
     - pandoc-crossref --version
